@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Contact</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo"><img src="img/logo.png" alt="Agence OLJU"></div>
+            <div class="nav">
+                <nav class="navLinks">
+                    <a href="index.html" title="accueil">Accueil</a>
+                    <a href="categorie/catmaison.html" title="maisons">Maisons</a>
+                    <a href="categorie/catappart.html" title="appartements">Appartements</a>
+                    <a href="categorie/catimmeuble.html" title="immeubles">Immeubles</a>
+                    <a href="categorie/catlocal.html" title="loaux">Locaux</a>
+                    <a href="categorie/catterrains.html" title="terrains">Terrains</a>
+                    <a href="contact.html" title="contact">Contact</a>
+                </nav>
+            </div>
+
+        </header>
+        <section class="contact">
+            <div class="container">
+                <form action="contact.html">
+                    <h2> Contactez-Nous : </h2>
+                    <div class="boite">
+                        <label for= "prenom">Prénom :</label>
+                        <input type="text" required name="prenom" id="prenom" />
+                    </div>
+
+                    <div class="boite">
+                        <label for ="nom"> Nom : </label>
+                        <input type="text" name="nom" id="nom"  required />
+                    </div>
+
+                    <div class="boite">
+                        <label for="email"> Votre adresse mail</label>
+                        <input type="email" required id="email" name="email">
+                    </div>
+
+                    <div class="boite">
+                        <label for="tel"> Numéro de téléphone</label>
+                        <input type="tel" id="tel" name="tel" maxlength="10">
+                    </div>
+
+
+                    <div class="boite">
+                        <label for= "option">Le sujet :</label>
+                        <select name="option" id="option">
+                            <option>Achat</option>
+                            <option>Vente</option>
+                            <option>Demande d'informations</option>
+                        </select>
+                    </div>
+
+                    <div class="boite">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="pied-formulaire">
+                        <button type="submit">Envoyer</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div class="coordonnee">
+                <div class="coordonee-pos">
+                    <h2> Coordonnées </h2>
+                    <p> Adresse : 10 Rue de la Lys, ROUBAIX 59100</p>
+                    <p>Téléphone : 03 50 60 42 80</p>
+                    <p>E-mail : OLJUAgence@gmail.com</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+
+            <div class="contactInfo">
+                <h3>Nos coordonnées</h3>
+                <p>10 Rue de la Lys, ROUBAIX 59100</p>
+                <p>03 50 60 42 80</p>
+                <p>OLJUAgence@gmail.com</p>
+            </div>
+            <div class="menuFooter">
+                <h3>Parcourir</h3>
+                <a href="index.html" title="accueil">Accueil</a>
+                <a href="categorie/catmaison.html" title="maisons">Maisons</a>
+                <a href="categorie/catappart.html" title="appartements">Appartements</a>
+                <a href="categorie/catimmeuble.html" title="immeubles">Immeubles</a>
+                <a href="categorie/catlocal.html" title="locaux">Locaux</a>
+                <a href="categorie/catterrains.html" title="terrains">Terrains</a>
+                <a href="contact.html" title="maisons">Contact</a>
+            </div>
+        </footer>
+
+    </body>

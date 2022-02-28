@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pavillon 6 pièces 127 m²</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link rel="stylesheet" href="../style.css">
+        <script src="../carrousel/carrousel_maison/carrousel5.js"></script>
+
+     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js">
+    </script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><img src="../img/logo.png" alt="Agence OLJU"></div>
+            <div class="nav">
+                <nav class="navLinks">
+                    <a href="../index.html" title="accueil">Accueil</a>
+                    <a href="../categorie/catmaison.html" title="maisons">Maisons</a>
+                    <a href="../categorie/catappart.html" title="appartements">Appartements</a>
+                    <a href="../categorie/catimmeuble.html" title="immeubles">Immeubles</a>
+                    <a href="../categorie/catlocal.html" title="locaux">Locaux</a>
+                    <a href="../categorie/catterrains.html" title="terrains">Terrains</a>
+                    <a href="../contact.html" title="contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+<div id="profile">
+        <div class="maison1">
+            <div id="previous" onclick="ChangeSlide(-1)"> < </div>
+            <div class="image-maison1">
+                <img src="../imgmaison/maison5.jpg" alt="image-maison5" id="slide"> 
+            </div>
+            <div id="next" onclick="ChangeSlide(1)"> > </div>
+
+            <div class="contenu-maison1">
+                <h1 class="titre-maison1">Pavillon 6 pièces 127 m² -  299 000 €</h1>
+                <p class="descript-maison1">Dans une secteur calme, en bordure de rivière, pavillon comprenant au rdc entrée - dégagement, séjour, cuisine, chambre, salle de bain, wc séparé. A l'étage, 4 chambres, salle d'eau avec wc. Garage, le tout sur 459 m² de jardin clos.</p>
+            </div>
+        </div>
+ <a href="javascript:pdf()" id="DlButton">Telecharger</a>
+</div>
+        <footer>
+
+            <div class="contactInfo">
+                <h3>Nos coordonnées</h3>
+                <p>10 Rue de la Lys, ROUBAIX 59100</p>
+                <p>03 50 60 42 80</p>
+                <p>OLJUAgence@gmail.com</p>
+            </div>
+
+            <div class="menuFooter">
+                <h3>Parcourir</h3>
+                <a href="../index.html" title="accueil">Accueil</a>
+                <a href="../categorie/catmaison.html" title="maisons">Maisons</a>
+                <a href="../categorie/catappart.html" title="appartements">Appartements</a>
+                <a href="../categorie/catimmeuble.html" title="immeubles">Immeubles</a>
+                <a href="../categorie/catlocal.html" title="locaux">Locaux</a>
+                <a href="../categorie/catterrains.html" title="terrains">Terrains</a>
+                <a href="../contact.html" title="maisons">Contact</a>
+            </div>
+        </footer>
+
+  
+
+
+   <script>
+   async function pdf(){
+         document.getElementById("DlButton").innerHTML="En train de telecharger,patienter";
+
+        var element = document.getElementById('profile');
+        var opt = {
+            margin : 1,
+            filename: 'sample.pdf',
+            image: { type: 'jpg', quality: 0.70},
+            html2canvas: { scale: 4},
+            jsPDF: { unit : 'in', format: 'letter', orientation: 'portrait'}
+        };
+
+        html2pdf().set(opt).from(element).save();
+
+            }
+            }
+
+            }
+        }
+        document.getElementById("DlButton").innerHTML="En train de telecharger,patienter";
+    }
+    </script>
+    </body>
+</html>

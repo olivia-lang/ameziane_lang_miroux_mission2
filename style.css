@@ -1,0 +1,369 @@
+/* IMPORT DES POLICES */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+body {
+	margin:0;
+	padding:0;
+	position: relative;
+}
+ 
+ /* HEADER */
+header {
+    display: flex;
+    left: 0;
+    right: 0;
+	background-color:rgb(58, 82, 161);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+ .logo{
+	height: 35px;
+ }
+ 
+.logo img {
+    width: 120px;
+    margin-left: 25px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+ 
+.nav {
+	margin-right: 60px;
+    margin-left: auto;
+    align-items: center;
+}
+ 
+.navLinks a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding-right: 15px;
+}
+ 
+.navLinks a:hover {
+    -webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	color: rgb(0, 0, 0)
+}
+/* FIN HEADER */
+
+/* PAGE ACCUEIL */
+/* BANNIERE */
+.banner {
+    min-height: 90vh;
+    background:  linear-gradient(rgb(0,0,0,0.4),transparent),url(img/banner7.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.banner h2{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.banner h3{
+	margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+/* PRESENTATION AGENCE */
+.titreAgence{
+    text-align: center;
+    text-decoration: underline rgb(58, 82, 161) ;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+ }
+ 
+.presentation{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 40px;
+	justify-content: space-around;
+}
+ 
+.presentation img{
+	border: 5px solid rgb(58, 82, 161);
+	width: 400px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pres_agence{
+	padding: 30px;
+	width:1000px ;
+	text-align: justify;
+	display: flex;
+	flex-wrap: wrap;
+}
+ 
+ h1, p, a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* PRESENTATION ANNONCE */ 
+ h2.titreAnnonce {
+	text-decoration: underline rgb(58, 82, 161) ;
+	font-size: 35px;
+	padding: 30px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.titleAnnonce {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.annonce img{
+	border-radius: 30px;
+	width: 300px;
+	height: 250px;
+	object-fit : cover;
+	box-shadow: 2px 2px 5px 1px grey;
+}
+/* FIN PAGE ACCUEIL */
+
+/* PAGE CATEGORIE */
+.titreMaison{
+	text-align: center;
+	font-size: 35px;
+}
+
+.rang1,.rang2,.rang3{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.maison img{
+	width: 375px;
+	height: 320px;
+	box-shadow: 2px 2px 5px 1px grey;
+	border-radius:5px;
+	object-fit : cover;
+}
+
+/* FIN PAGE CATEROGIE */
+
+/* PAGE MODELE */
+.maison1, .appart1, .local1, .terrain1,.immeuble1{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	align-items: center;
+}
+
+.image-maison1, .image-appart1, .image-local1, .image-terrain1,.image-immeuble1{
+	width: 45%;
+	overflow: hidden;
+	margin: 30px;
+	margin-top: 70px;
+	box-shadow: 2px 2px 5px 1px grey;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 400px;
+	display: flex;
+}
+
+.contenu-maison1, .contenu-appart1, .contenu-local1, .contenu-terrain1,.contenu-immeuble1 {
+	margin-top: 30px;
+	width: 50%;
+	margin-left: 20px;
+	padding-left: 30px;
+	border-left: thick double #EBE9E9;
+	text-align: justify;
+}
+
+h1 .titre-maison1, h1 .titre-apart1, h1 .titre-local1, h1 .titre-terrain1, h1 .titre-immeuble1 {
+	width: 30%;
+	height: 50px;
+	float: right;
+	position: relative;
+	font-size: 25px;
+}
+
+p .descript-maison1, p .descript-appart1, p .descript-local1, p .descript-terrain1,p .descript-immeuble1{
+	border: solid;
+	float: right;
+	border: solid;
+	font-size: 25px;
+	overflow: hidden;
+}
+
+/* CAROUSEL */
+#previous, #next {
+	cursor: pointer;
+	font-size: 30px;
+	color: black;
+}
+
+#previous {
+	margin-left: 10px;
+}
+
+/* FIN CAROUSEL */
+/* FIN MAISON */
+
+/* PAGE CONTACT */
+form{
+	margin: 100px 25%;
+	background-color: none; 
+}
+ 
+input[type=text], select, textarea,input[type=email],input[type=tel] {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc;
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	resize: none; 
+}
+
+input[type=submit] {
+	background-color: rgb(58, 82, 161);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  width : 70%;
+} 
+ 
+form button{
+    background-color:  #3A52A1;
+	color: white;
+	font-size: 15px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+form button:hover{
+    transform: scale(1.05);
+}
+
+.contact {
+	display : flex;
+}
+
+.coordonnee {
+	width : 35%;
+	padding-left : 50px;
+	border-left: thick double #EBE9E9;
+	height : 1000px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.coordonee-pos{
+	margin-top: 250px;
+}
+/* FIN FORMULAIRE */
+
+ /* FOOTER */
+footer{
+	background: rgb(248,249,250);
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 20px;
+	font-size: 17px;
+}
+
+.menuFooter a{
+	text-decoration: none;
+	color: black;
+	display: inline;
+}
+ 
+.contactInfo{
+	color: black;
+	padding-right: 55px;
+}
+
+.contactInfo p{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.menuFooter  {
+	color: black;  
+	padding-left: 55px;
+	display: inline;
+}
+
+.menuFooter a {
+	font-weight: bold;
+	font-size: 15px;
+}
+/* FIN FOOTER */
+
+/* RESPONSIVE */
+@media  (max-width:500px) {
+  body,a,p{
+    font-size: 15px; 
+  }
+  
+  .banner h2{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+.banner h3{
+	margin-top: 20px;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+	text-align: center;
+  }
+ 
+ .navLinks a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+}
+
+.nav {
+	margin-right: 10px;
+    margin-left: 50px;;
+    align-items: center;
+	width: 250px;
+	float: right;
+}
+
+.logo img {
+    width: 120px;
+    margin-left: 25px;
+	padding-left: 20px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+}
+ 
+}
