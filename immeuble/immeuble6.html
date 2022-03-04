@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_immeuble/carrousel6.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,7 +25,7 @@
                 </nav>
             </div>
         </header>
-
+<div id="printable">
         <div class="immeuble1">
             <div id="previous" onclick="ChangeSlide(-1)"> < </div>
             <div class="image-immeuble1">
@@ -35,7 +38,8 @@
                 <p class="descript-immeuble1">TOURCOING PROXIMITE MAIRIE Petit immeuble 1930 avec cachet en partie rénové comprenant au rez de chaussé salon, cuisine équipée, salle de douche et WC en parfait état. 1e étage: un plateau de 31 m² au 2e étage: 2 chambres et salle de bain avec WC. Jolie Façade - double vitrage récent Honoraires à la charge de l'acquéreur. (130 000.00 € honoraires exclus - Honoraires de 6,15% TTC à la charge de l'acquéreur).</p>
             </div>
         </div>
-
+ </div>
+         <button onClick="printToPDF()">Télécharger </button>
 
         <footer>
 

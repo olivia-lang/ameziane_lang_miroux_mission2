@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_immeuble/carrousel5.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,7 +25,7 @@
                 </nav>
             </div>
         </header>
-
+<div id="printable">
         <div class="immeuble1">
             <div id="previous" onclick="ChangeSlide(-1)"> < </div>
             <div class="image-immeuble1">
@@ -35,7 +38,8 @@
                 <p class="descript-immeuble1">***VISITE VIRTUELLE DISPONIBLE*** ***EXCLUSIVITE*** Dans le centre-ville de Landrecies, immeuble de rapport. Montant annuel des loyers : 15 500€ Idéal investisseur.?? Composé de 3 logements.?Au rez-de-chaussée, logement T2 de 51m² loi carrez comprenant une chambre de 15m², un séjour de 18m², une cuisine de 8m². Accès sanitaires-salle de bain par une courette. Travaux à prévoir dans ce logement ?Au 1er étage, logement T2 de 51m² loi carrez comprenant une cuisine de 13m², un séjour de 20m², une chambre de 9m². Chauffage gaz ?Aux 2ème et 3ème étage, Duplex de type T4 de 75m² loi carrez comprenant un séjour de 18m², un salon de 19m² et à l’étage deux chambres de 10m² chacune. Chauffage gaz Compteurs électriques individuels Compteur d’eau commun avec des sous compteurs Fenêtres en simple et double vitrage Taxe foncière : 1500€ </p>
             </div>
         </div>
-
+ </div>
+         <button onClick="printToPDF()">Télécharger </button>
 
         <footer>
 

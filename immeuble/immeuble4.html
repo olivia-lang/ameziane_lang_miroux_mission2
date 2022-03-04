@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_immeuble/carrousel4.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,7 +25,7 @@
                 </nav>
             </div>
         </header>
-
+<div id="printable">
         <div class="immeuble1">
             <div id="previous" onclick="ChangeSlide(-1)"> < </div>
             <div class="image-immeuble1">
@@ -34,7 +37,8 @@
                 <p class="descript-immeuble1">Hyper centre ville Béthune; Local professionnel composé de :Grand hall d'accueil (22m²) desservant trois bureaux (13.11.10) , local technique avec sanitaires. le local est situé au troisième étage d'un immeuble à usage professionnel (cardiologues, sièges de société...) Deux minutes à pied de la grand place et des rues commerçantes de Béthune. Chauffage individuel et beaucoup de luminosité.</p>
             </div>
         </div>
-
+ </div>
+         <button onClick="printToPDF()">Télécharger </button>
 
         <footer>
 
