@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_maison/carrousel3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,27 +25,28 @@
                 </nav>
             </div>
         </header>
+        <div id="printable">
+            <div class="maison1">
+                <div id="previous" onclick="ChangeSlide(-1)"> < </div>
+                <div class="image-maison1">
+                    <img src="../imgmaison/maison3.jpg" alt="image-maison3" id ="slide">
+                </div>
+                <div id="next" onclick="ChangeSlide(1)"> > </div>
 
-        <div class="maison1">
-            <div id="previous" onclick="ChangeSlide(-1)"> < </div>
-            <div class="image-maison1">
-                <img src="../imgmaison/maison3.jpg" alt="image-maison3" id ="slide">
-            </div>
-            <div id="next" onclick="ChangeSlide(1)"> > </div>
+                <div class="contenu-maison1">
+                    <h1 class="titre-maison1">Maison 90 m² Parigne Le Polin -  171 313 €</h1>
+                    <p class="descript-maison1">Maison de 2 à 5 chambres, avec étage ou plain-pied évolutive.
 
-            <div class="contenu-maison1">
-                <h1 class="titre-maison1">Maison 90 m² Parigne Le Polin -  171 313 €</h1>
-                <p class="descript-maison1">Maison de 2 à 5 chambres, avec étage ou plain-pied évolutive.
-
-                    Comprenant cuisine ouverte sur grande et lumineuse pièce de vie, cellier, 3 chambres, grande salle de bain et WC séparé.
-                    Garage de 17 m², possibilité agrandissement, double-garage.
-                    Volets roulant Motorisés, Porte de garage sectionnelle motorisé, Fenêtre cuisine et SDB oscillo-battant.
-                    Prestations soignées. Plancher chauffant basse température.
-                    Chauffage et eau chaude produits par pompe à chaleur dernière génération (économie d'énergie optimale et confort)
-                    Conformité aux normes thermiques RT2012 /RE2020 (classe A). </p>
+                        Comprenant cuisine ouverte sur grande et lumineuse pièce de vie, cellier, 3 chambres, grande salle de bain et WC séparé.
+                        Garage de 17 m², possibilité agrandissement, double-garage.
+                        Volets roulant Motorisés, Porte de garage sectionnelle motorisé, Fenêtre cuisine et SDB oscillo-battant.
+                        Prestations soignées. Plancher chauffant basse température.
+                        Chauffage et eau chaude produits par pompe à chaleur dernière génération (économie d'énergie optimale et confort)
+                        Conformité aux normes thermiques RT2012 /RE2020 (classe A). </p>
+                </div>
             </div>
         </div>
-
+        <button onClick="printToPDF()">Télécharger </button>
         <footer>
 
             <div class="contactInfo">

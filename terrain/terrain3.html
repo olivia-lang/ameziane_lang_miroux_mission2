@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_terrain/carrousel3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,22 +25,23 @@
                 </nav>
             </div>
         </header>
-
-        <div class="terrain1">
-            <div id="previous" onclick="ChangeSlide(-1)"> < </div>
-            <div class="image-terrain1">
-                <img src="../imgterrain/terrain3.jpg" alt="image-terrain3" id="slide">
-            </div>
-            <div id="next" onclick="ChangeSlide(1)"> > </div>
-            <div class="contenu-terrain1">
-                <h1 class="titre-terrain1">Terrain - 116 000€</h1>
-                <p class="descript-terrain1">A 4KM de Grignan - Dans un charmant village provençale entourée de vignobles des Côtes du Rhône,
-                    de champs de lavandes et de bois de chênes truffiers, nous vous proposons dans un petit lotissement de 4 lots entièrement viabilisés et près de toutes les commodités
-                    (ÉCOLE, PHARMACIE, MÉDECIN, COMMERCES...), ce beau terrain plat à bâtir (Lot no3) et arboré d'une surface de 800m2. ENVIRONNEMENT : CALME. LIBRE CONSTRUCTEUR.
-                    Eau de ville - tout à l'égout (prévoir pompe de relevage) - CALME - RARE. </p>
+        <div id="printable">
+            <div class="terrain1">
+                <div id="previous" onclick="ChangeSlide(-1)"> < </div>
+                <div class="image-terrain1">
+                    <img src="../imgterrain/terrain3.jpg" alt="image-terrain3" id="slide">
+                </div>
+                <div id="next" onclick="ChangeSlide(1)"> > </div>
+                <div class="contenu-terrain1">
+                    <h1 class="titre-terrain1">Terrain - 116 000€</h1>
+                    <p class="descript-terrain1">A 4KM de Grignan - Dans un charmant village provençale entourée de vignobles des Côtes du Rhône,
+                        de champs de lavandes et de bois de chênes truffiers, nous vous proposons dans un petit lotissement de 4 lots entièrement viabilisés et près de toutes les commodités
+                        (ÉCOLE, PHARMACIE, MÉDECIN, COMMERCES...), ce beau terrain plat à bâtir (Lot no3) et arboré d'une surface de 800m2. ENVIRONNEMENT : CALME. LIBRE CONSTRUCTEUR.
+                        Eau de ville - tout à l'égout (prévoir pompe de relevage) - CALME - RARE. </p>
+                </div>
             </div>
         </div>
-
+  <button onClick="printToPDF()">Télécharger </button>
 
         <footer>
 

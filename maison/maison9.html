@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_maison/carrousel9.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,21 +25,22 @@
                 </nav>
             </div>
         </header>
+        <div id="printable">
+            <div class="maison1">
+                <div id="previous" onclick="ChangeSlide(-1)"> < </div>
+                <div class="image-maison1">
+                    <img src="../imgmaison/maison9.jpg" alt="image-maison9" id="slide">
+                </div>
+                <div id="next" onclick="ChangeSlide(1)"> > </div>
 
-        <div class="maison1">
-            <div id="previous" onclick="ChangeSlide(-1)"> < </div>
-            <div class="image-maison1">
-                <img src="../imgmaison/maison9.jpg" alt="image-maison9" id="slide">
+                <div class="contenu-maison1">
+                    <h1 class="titre-maison1">Maison 5 pièces 150 m² - 300 000 €</h1>
+                    <p class="descript-maison1">Villa de 114 m2 située dans un lotissement de 8 villas en impasse a port de bouc.  Lotissement très calme et villa sans aucun vis-à-vis sur une parcelle de 445 m2.  une grande pièce de vie avec lumière traversante disposant d'un salon, salle à manger et cuisine.  une buanderie/cellier pouvant recevoir un grand congélateur, réfrigérateur, machine à laver et placards de rangement.  3 belles chambres et une très grande chambre d'amis /coin bureau.  belle salle d'eau avec double vasque, douche à l'italienne et miroir avec désembuage  wc indépendant   la maison est équipé de panneaux solaire.  WC extérieur piscine en dure avec pool house/cuisine d'été équipée tout inox avec éclairage commandé par smartphone ou télécommande.   Alors n'attendez plus, contactez nous pour la visiter Montant estimé des dépenses annuelles d'énergie pour un usage standard : entre 980.0 € et 1380.0 € pour 2021.</p>
+                </div>
             </div>
-            <div id="next" onclick="ChangeSlide(1)"> > </div>
 
-            <div class="contenu-maison1">
-                <h1 class="titre-maison1">Maison 5 pièces 150 m² - 300 000 €</h1>
-                <p class="descript-maison1">Villa de 114 m2 située dans un lotissement de 8 villas en impasse a port de bouc.  Lotissement très calme et villa sans aucun vis-à-vis sur une parcelle de 445 m2.  une grande pièce de vie avec lumière traversante disposant d'un salon, salle à manger et cuisine.  une buanderie/cellier pouvant recevoir un grand congélateur, réfrigérateur, machine à laver et placards de rangement.  3 belles chambres et une très grande chambre d'amis /coin bureau.  belle salle d'eau avec double vasque, douche à l'italienne et miroir avec désembuage  wc indépendant   la maison est équipé de panneaux solaire.  WC extérieur piscine en dure avec pool house/cuisine d'été équipée tout inox avec éclairage commandé par smartphone ou télécommande.   Alors n'attendez plus, contactez nous pour la visiter Montant estimé des dépenses annuelles d'énergie pour un usage standard : entre 980.0 € et 1380.0 € pour 2021.</p>
-            </div>
         </div>
-
-
+        <button onClick="printToPDF()">Télécharger </button>
         <footer>
 
             <div class="contactInfo">

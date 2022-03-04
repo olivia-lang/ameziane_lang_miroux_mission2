@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_terrain/carrousel9.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,7 +25,7 @@
                 </nav>
             </div>
         </header>
-
+        <div id="printable">
         <div class="terrain1">
             <div id="previous" onclick="ChangeSlide(-1)"> < </div>
             <div class="image-terrain1">
@@ -35,7 +38,8 @@
                     Situé dans un coin tranquille, vous avez la possibilité de construire plusieurs maisons avec une magnifique vue sur le paysage environnant pour un bon rendement locatif.</p>
             </div>
         </div>
-
+</div>
+          <button onClick="printToPDF()">Télécharger </button>
 
         <footer>
 
