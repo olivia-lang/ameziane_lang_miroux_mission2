@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_maison/carrousel6.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,24 +25,25 @@
                 </nav>
             </div>
         </header>
+        <div id="printable">
+            <div class="maison1">
+                <div id="previous" onclick="ChangeSlide(-1)"> < </div>
+                <div class="image-maison1">
+                    <img src="../imgmaison/maison6.jpg" alt="image-maison6" id ="slide">
+                </div>
+                <div id="next" onclick="ChangeSlide(1)"> > </div>
+                <div class="contenu-maison1">
+                    <h1 class="titre-maison1">Maison 130 m² - 265 500 €</h1>
+                    <p class="descript-maison1">Venez découvrir cette maison familiale de 130m2 environ proche des écoles. Dont l'accès RN20 et RER C se fait en  10 minutes en voitures. Vous entrez sur une cuisine aménagée et équipée et sa salle à manger donnant accès sur la véranda, un dégagement vous conduit au séjour double avec cheminée foyer ouvert. Une salle d'eau et un wc se trouvent également au rez de chaussé.
+                        A l'étage: Vous trouverez 2 chambres spacieuses et une troisième chambre avec une mezzanine, ainsi  qu'une salle de bains/wc.
+                        Un cabane de jardin et une cave complètent se bien. Le tout sur un terrain de 310m2 environ.
+                        Les +: Du potentiel et du volume.
+                    </p>
+                </div>
+            </div>
 
-        <div class="maison1">
-            <div id="previous" onclick="ChangeSlide(-1)"> < </div>
-            <div class="image-maison1">
-                <img src="../imgmaison/maison6.jpg" alt="image-maison6" id ="slide">
-            </div>
-            <div id="next" onclick="ChangeSlide(1)"> > </div>
-            <div class="contenu-maison1">
-                <h1 class="titre-maison1">Maison 130 m² - 265 500 €</h1>
-                <p class="descript-maison1">Venez découvrir cette maison familiale de 130m2 environ proche des écoles. Dont l'accès RN20 et RER C se fait en  10 minutes en voitures. Vous entrez sur une cuisine aménagée et équipée et sa salle à manger donnant accès sur la véranda, un dégagement vous conduit au séjour double avec cheminée foyer ouvert. Une salle d'eau et un wc se trouvent également au rez de chaussé.
-                    A l'étage: Vous trouverez 2 chambres spacieuses et une troisième chambre avec une mezzanine, ainsi  qu'une salle de bains/wc.
-                    Un cabane de jardin et une cave complètent se bien. Le tout sur un terrain de 310m2 environ.
-                    Les +: Du potentiel et du volume.
-                </p>
-            </div>
         </div>
-
-
+        <button onClick="printToPDF()">Télécharger </button>
         <footer>
 
             <div class="contactInfo">

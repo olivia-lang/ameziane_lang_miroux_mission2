@@ -6,6 +6,9 @@
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <link rel="stylesheet" href="../style.css">
         <script src="../carrousel/carrousel_maison/carrousel8.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -22,26 +25,27 @@
                 </nav>
             </div>
         </header>
+        <div id="printable">
+            <div class="maison1">
+                <div id="previous" onclick="ChangeSlide(-1)"> < </div>
+                <div class="image-maison1">
+                    <img src="../imgmaison/maison8.jpg" alt="image-maison8" id="slide">
+                </div>
+                <div id="next" onclick="ChangeSlide(1)"> > </div>
 
-        <div class="maison1">
-            <div id="previous" onclick="ChangeSlide(-1)"> < </div>
-            <div class="image-maison1">
-                <img src="../imgmaison/maison8.jpg" alt="image-maison8" id="slide">
-            </div>
-            <div id="next" onclick="ChangeSlide(1)"> > </div>
-
-            <div class="contenu-maison1">
-                <h1 class="titre-maison1">Maison 7 pièces 150 m² - 420 000 €</h1>
-                <p class="descript-maison1"> Maison pleine de potentiel entre les olives et la Croix-Rouge, au calme absolu, sans vis-à-vis.
-                    Idéale pour deux familles Car la maison est composée d'un appartement T3 au rez-de-chaussée et d'un autre appartement T4 à l'étage.
-                    Chaque niveau à sa propre terrasse ainsi que son propre jardin. Les deux jardins sont d'ailleurs piscinable...
-                    Revennos sur le  premier niveau : le Rez de chaussée : Il est composée d'une pièce de vie, de deux chambres,  d'une salle de bain avec baignoire et douche d'un WC et d'une buanderie,
-                    Quant à l étage : il est composé d'une pièce de vie, d'une cuisine américaine, d'un dégagement qui dessert trois chambres une salle de bains douche et we
-                    Notons que la maison peut être reliée et que nous pouvons en faire une grande maison
-                    vous serez impressionné par la luminosité et si vous arrivez à vous projeter vous pourrez en faire une vraie pépite</p>
+                <div class="contenu-maison1">
+                    <h1 class="titre-maison1">Maison 7 pièces 150 m² - 420 000 €</h1>
+                    <p class="descript-maison1"> Maison pleine de potentiel entre les olives et la Croix-Rouge, au calme absolu, sans vis-à-vis.
+                        Idéale pour deux familles Car la maison est composée d'un appartement T3 au rez-de-chaussée et d'un autre appartement T4 à l'étage.
+                        Chaque niveau à sa propre terrasse ainsi que son propre jardin. Les deux jardins sont d'ailleurs piscinable...
+                        Revennos sur le  premier niveau : le Rez de chaussée : Il est composée d'une pièce de vie, de deux chambres,  d'une salle de bain avec baignoire et douche d'un WC et d'une buanderie,
+                        Quant à l étage : il est composé d'une pièce de vie, d'une cuisine américaine, d'un dégagement qui dessert trois chambres une salle de bains douche et we
+                        Notons que la maison peut être reliée et que nous pouvons en faire une grande maison
+                        vous serez impressionné par la luminosité et si vous arrivez à vous projeter vous pourrez en faire une vraie pépite</p>
+                </div>
             </div>
         </div>
-
+        <button onClick="printToPDF()">Télécharger </button>
         <footer>
 
             <div class="contactInfo">

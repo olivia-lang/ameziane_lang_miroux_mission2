@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <script src="../carrousel/carrousel_local/carrousel2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -24,7 +27,7 @@
                 </nav>
             </div>
         </header>
-
+<div id="printable">
         <div class="local1">
             <div id="previous" onclick="ChangeSlide(-1)"> < </div>
             <div class="image-local1">
@@ -38,9 +41,14 @@
                 </p>
             </div>
         </div>
+<<<<<<< HEAD
 
 
          <div class="footer-dark">
+=======
+</div>
+ <button onClick="printToPDF()">Télécharger </button>
+>>>>>>> 88a2a60d0d9587b6d0a48b703b7fa1fa2920f0d8
         <footer>
             <div class="container">
                 <div class="row">

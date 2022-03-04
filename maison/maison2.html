@@ -8,6 +8,9 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <script src="../carrousel/carrousel_maison/carrousel2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+        <script src="../scriptPDF.js" defer></script>
     </head>
     <body>
         <header>
@@ -24,25 +27,30 @@
                 </nav>
             </div>
         </header>
+        <div id="printable">
+            <div class="maison1">
+                <div id="previous" onclick="ChangeSlide(-1)"> < </div>
+                <div class="image-maison1">
+                    <img src="../imgmaison/maison2.jpg" alt="image-maison2" id="slide">
+                </div>
+                <div id="next" onclick="ChangeSlide(1)"> > </div>
 
-        <div class="maison1">
-            <div id="previous" onclick="ChangeSlide(-1)"> < </div>
-            <div class="image-maison1">
-                <img src="../imgmaison/maison2.jpg" alt="image-maison2" id="slide">
-            </div>
-            <div id="next" onclick="ChangeSlide(1)"> > </div>
+                <div class="contenu-maison1">
+                    <h1 class="titre-maison1">Maison 5 pièces 109 m² - 167840 € </h1>
+                    <p class="descript-maison1">Maison 5 pièces 109 m²
 
-            <div class="contenu-maison1">
-                <h1 class="titre-maison1">Maison 5 pièces 109 m² - 167840 € </h1>
-                <p class="descript-maison1">Maison 5 pièces 109 m²
-
-                    Idéal premier achat ou investissement locatif. Dans la commune d'Évreux, proche des commodités. Maison 5 pièces au calme composée au rez-de-chaussée d'une entrée, un W.C, une cuisine aménagée , un salon avec accès sur une véranda. A l'étage : d'une salle de bains, d'un palier et 3 chambres. Le terrain nécessite peu d'entretien. La maison donne accès à un garage privatif. Chauffage individuel. Disponible tout de suite. 
-                </p>
+                        Idéal premier achat ou investissement locatif. Dans la commune d'Évreux, proche des commodités. Maison 5 pièces au calme composée au rez-de-chaussée d'une entrée, un W.C, une cuisine aménagée , un salon avec accès sur une véranda. A l'étage : d'une salle de bains, d'un palier et 3 chambres. Le terrain nécessite peu d'entretien. La maison donne accès à un garage privatif. Chauffage individuel. Disponible tout de suite. 
+                    </p>
+                </div>
             </div>
         </div>
+<<<<<<< HEAD
 
 
          <div class="footer-dark">
+=======
+        <button onClick="printToPDF()">Télécharger </button>
+>>>>>>> 88a2a60d0d9587b6d0a48b703b7fa1fa2920f0d8
         <footer>
             <div class="container">
                 <div class="row">
